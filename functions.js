@@ -1,5 +1,3 @@
-//Arguments - whatever gets put inside the functuon brackets
-
 //Function declaration
 
 function sayHello() {
