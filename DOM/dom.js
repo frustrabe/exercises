@@ -51,4 +51,55 @@ document.getElementById("first-p");
 // ----------------------------
 
 /* DOM  query Selectors
+ A more powerful way of selecting elements than ".getElements..."
  */
+document.querySelector("h1");
+
+// This method returns the "FIRST" element that matches a CSS selector
+
+// <h1>Hello DOM</h1>
+
+document.querySelectorAll("li");
+
+// This method returns all elements that match a given CSS selectors
+
+// NodeList(5) [li, li, li, li, li]
+
+// ----------------------------
+
+document.querySelector("li").getAttribute("random");
+
+// This method gets the value of the class attribute of an element
+// In this case we select the li element and its attribute "random"
+// and we receive the value stored inside
+
+// '23'
+
+document.querySelector("li").setAttribute("random", "brocolli");
+
+// This method sets the value of the class attribute of an element
+// In this case we select the li element and its attribute "random"
+// and we give it our new value "brocolli" to overwrite the one before
+
+// We can use it to change styles too
+document.querySelector("p").setAttribute("style", "color: red");
+// Here we are manipulating the css property "color" and changing
+// the "p" tags color to red
+
+// OR
+
+document.querySelector("p").style.color = "yellow";
+
+// However we should assign a variable to our tag and
+// this way we dont have to write it again and can just access it.
+let h1 = document.querySelector("h1");
+let h2 = document.querySelector("h2");
+let p = document.querySelector("p");
+
+// adding a stolen css class using "className"
+// we link it in html
+h1.className = "coolTitle";
+h2.className = "coolTitle";
+h1.className = "coolTitle";
+p.className = "coolTitle";
+p.style.color = "red";
