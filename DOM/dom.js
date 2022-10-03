@@ -90,7 +90,7 @@ document.querySelector("p").setAttribute("style", "color: red");
 
 document.querySelector("p").style.color = "yellow";
 
-// However we should assign a variable to our tag and
+// However, we should assign a variable to our tag and
 // this way we dont have to write it again and can just access it.
 let h1 = document.querySelector("h1");
 let h2 = document.querySelector("h2");
@@ -103,3 +103,44 @@ h2.className = "coolTitle";
 h1.className = "coolTitle";
 p.className = "coolTitle";
 p.style.color = "red";
+
+//classList returns the CSS classnames of an element, returns
+// DOMTokenList (space separated tokens, accessed by index)
+
+document.querySelector("li").classList;
+
+// few methods that are usefull
+// classList.add;
+// document.querySelector("li").classList.add("done")
+
+// classList.remove;
+// document.querySelector("li").classList.remove("coolTitle")
+
+// classList.toggle;
+// document.querySelector("li").classList.toggle("done")
+
+document.querySelector("p").innerHTML = "Bought today";
+
+// we can change the text inside the tag with .innerHTML
+
+// parentElement - gives the parent element of the selected element,
+// parent of "li" is "ul"
+// document.querySelectorAll("li")[1].parentElement
+/* 
+<ul>
+        <li class="bold red" random="23">carrots</li>
+        <li>potatoes</li>
+        <li>mushrooms</li>
+        <li>beans</li>
+        <li>brown rice</li>
+</ul>
+ */
+
+// children - we receive the children elements of our parentElement
+// document.querySelectorAll("li")[1].parentElement.children
+// HTMLCollection(5) [li.bold.red, li, li, li, li]
+
+// WE SHOULD ALWAYS CACHE SELECTORS INSIDE VARIABLES, THIS WAY WE CAN
+// RE USE THEM LATER WHEN NEEDED
+
+// let h2 = document.querySelector("h2");
