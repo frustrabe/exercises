@@ -24,3 +24,7 @@ body {
   .done {
     text-decoration: line-through;
   }
+
+  button {
+    border-radius: 8px;
+  }
