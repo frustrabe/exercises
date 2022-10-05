@@ -5,7 +5,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   flex: 1;  
-  background: lightgoldenrodyellow
+  background: rgb(149, 149, 3)
   }
 
   .done {
@@ -13,6 +13,7 @@ body {
   }
 
   #container {
+    color: rgb(225, 218, 218);
   display: flex;
   flex-direction: column;
   margin: 50px; 
