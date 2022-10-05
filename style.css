@@ -32,10 +32,9 @@ body {
   padding: 4px 16px;
   border: none;
   margin-top: 15px;
+  margin-left: 10px;
   cursor: pointer;
 	transition: all 0.2s;
-	display: block;
-	width: min-content;
 	white-space: nowrap;
   background-color: seagreen;
   color: beige;
