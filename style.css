@@ -1,30 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
 body {
-    background: radial-gradient(600px at 50% 50% , #fff 20%, #000 100%);
-  }
-  .coolTitle {
-    text-align: left;
-    font-family: 'Oswald', Helvetica, sans-serif;
-    font-size: 40px;
-    transform: skewY(-10deg);
-    letter-spacing: 4px;
-    word-spacing: -8px;
-    color: tomato;
-    text-shadow: 
-      -1px -1px 0 firebrick,
-      -2px -2px 0 firebrick,
-      -3px -3px 0 firebrick,
-      -4px -4px 0 firebrick,
-      -5px -5px 0 firebrick,
-      -6px -6px 0 firebrick,
-      -7px -7px 0 firebrick,
-      -8px -8px 0 firebrick,
-      -30px 20px 40px dimgrey
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  flex: 1;  
+  background: lightgoldenrodyellow
   }
 
   .done {
-    text-decoration: line-through;
+  text-decoration: line-through;
+  }
+
+  #container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px; 
+  }
+
+  #user-input {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  display: block;
+  width: min-content;
+	white-space: nowrap;
   }
 
   button {
-    border-radius: 8px;
+  border-radius: 8px;
+  padding: 4px 16px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+	transition: all 0.2s;
+	display: block;
+	width: min-content;
+	white-space: nowrap;
+  background-color: seagreen;
+  color: beige;
   }
