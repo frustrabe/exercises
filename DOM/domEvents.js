@@ -9,7 +9,8 @@
 const button = document.getElementsByTagName("button")[0];
 // assigning a variable where we select a button ([0] is
 // necessary as getElementsByTagName returns an array so we
-// need to specify, otherwise we get)
+// need to specify, otherwise we get -
+
 // Uncaught TypeError: button.addEventListener is not a function
 
 // "click"
