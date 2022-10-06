@@ -4,7 +4,6 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  flex: 1;  
   background: rgb(149, 149, 3)
   }
 
@@ -13,30 +12,29 @@ body {
   }
 
   #container {
-    color: rgb(225, 218, 218);
-  display: flex;
+  color: rgb(225, 218, 218);
+  display: inline-block;
   flex-direction: column;
-  margin: 50px; 
+  margin: 8px 16px; 
   }
 
   #user-input {
-  border-radius: 4px;
+  text-align: left;
+  border-radius: 2px;
   border: none;
-  padding: 8px 24px;
-  display: block;
-  width: min-content;
-	white-space: nowrap;
+  padding: 8px 8px;
+  display: inline-block;
+  width: 55%;
   }
 
   button {
   border-radius: 8px;
-  padding: 4px 16px;
+  padding: 4px 14px;
   border: none;
   margin-top: 15px;
-  margin-left: 10px;
+  margin-left: 5px;
   cursor: pointer;
 	transition: all 0.2s;
-	white-space: nowrap;
   background-color: seagreen;
   color: beige;
   }
