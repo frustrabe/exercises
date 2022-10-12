@@ -13,12 +13,14 @@ function inputLength() {
 function createListElement() {
   // variable "list" gets created
   let li = document.createElement("li");
+
+  li.classList.add("listClass");
   // variable "textNode" gets created and grabs the value
   // of our input field
   let textNode = document.createTextNode(input.value);
-  // list appneds the "textNode" variable
+  // list appends the "textNode" variable
   li.appendChild(textNode);
-  // unordered list appneds the "list" variable with "textNode"
+  // unordered list appeds the "list" variable with "textNode"
   ul.appendChild(li);
   // input field value gets cleared to an empty string
   input.value = "";
@@ -45,6 +47,11 @@ function addListAfterKeypress(event) {
 function removeList() {
   ul.innerHTML = "";
 }
+
+/* function dashThrough() {
+  const list = document.getElementById("list-items");
+  list.style.toggle("done");
+} */
 
 // Callback function
 // Adding and eventListener "click" to our button
